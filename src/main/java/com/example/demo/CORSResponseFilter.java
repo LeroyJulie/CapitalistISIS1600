@@ -6,17 +6,11 @@
 package com.example.demo;
 
 import java.io.IOException;
-import java.lang.ProcessBuilder.Redirect.Type;
-import static javafx.scene.input.KeyCode.X;
-import javax.ws.rs.OPTIONS;
-import javax.ws.rs.PUT;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.ext.Provider;
-import org.springframework.boot.autoconfigure.security.SecurityProperties.User;
-import org.springframework.boot.autoconfigure.web.ResourceProperties.Content;
 
 /**
  *

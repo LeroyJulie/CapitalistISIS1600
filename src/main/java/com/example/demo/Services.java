@@ -1,9 +1,7 @@
 package com.example.demo;
 
-import generated.PallierType;
 import generated.ProductType;
 import generated.World;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
@@ -12,11 +10,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 /**
  *
  * @author Utilisateur
@@ -24,7 +18,7 @@ import javax.xml.bind.Unmarshaller;
 public class Services {
 
     World world = new World();
-    String path = "d:/ISIS_-Capitalist/src/main/resources/";
+    String path = "c:/CapitalistISIS1600/src/main/resources/";
 
     public World readWorldFromXml(String username) {
         JAXBContext jaxbContext;
@@ -61,6 +55,7 @@ public class Services {
             ex.printStackTrace();
         }
     }
+
 
     public World getWorld(String username) {
         System.out.println("getWorld()" + username);
@@ -101,9 +96,6 @@ public class Services {
         }
         return produit;
     }
+}
 // prend en paramètre le pseudo du joueur et le manager acheté.
 // renvoie false si l’action n’a pas pu être traitée
-
-
-   
-}

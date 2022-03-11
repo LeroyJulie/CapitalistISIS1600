@@ -16,10 +16,11 @@ import org.springframework.stereotype.Component;
 @Component
 @ApplicationPath("/adventureisis")
 public class JerseyConfig extends ResourceConfig {
- public JerseyConfig() {
+    
+    public JerseyConfig() {
 
- register(Webservice.class);
- register(CORSResponseFilter.class);
+        register(Webservice.class);
+        register(CORSResponseFilter.class);
  }
 }
 
