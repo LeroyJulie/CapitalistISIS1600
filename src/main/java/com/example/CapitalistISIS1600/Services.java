@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.CapitalistISIS1600;
 
 import generated.ProductType;
 import generated.World;
@@ -18,7 +18,7 @@ import javax.xml.bind.Unmarshaller;
 public class Services {
 
     World world = new World();
-    String path = "c:/CapitalistISIS1600/src/main/resources/";
+    String path = "";
 
     public World readWorldFromXml(String username) {
         JAXBContext jaxbContext;
